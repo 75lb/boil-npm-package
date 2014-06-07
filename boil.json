@@ -34,4 +34,3 @@
   
   "package": [ "bin", "jsdoc2md", "lib", "test", "gitignore", "jshintrc", "package.json", "readme" ]
 }
-
