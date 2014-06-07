@@ -7,7 +7,8 @@
     "package": "bin/cli.js"
   },
   "scripts": {
-    "test": "node bin/cli.js tmp; cd tmp; "
+    "test": "node bin/cli.js tmp; cd tmp; ",
+    "boil": "boil -t boil.hbs > boil.json; echo"
   },
   "author": "Lloyd Brookes",
   "dependencies": {
