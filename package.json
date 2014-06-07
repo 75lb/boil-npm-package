@@ -7,7 +7,7 @@
     "package": "bin/cli.js"
   },
   "scripts": {
-    "test": "package tmp; cd tmp; "
+    "test": "node bin/cli.js tmp; cd tmp; "
   },
   "author": "Lloyd Brookes",
   "dependencies": {
