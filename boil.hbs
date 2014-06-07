@@ -1,0 +1,36 @@
+{
+  "bin":{
+    "dest": "\{{args.[0]}}/bin/cli.js",
+    "template": {{{JSONstringify (read "assets/bin/cli.js")}}}
+  },
+  "jsdoc2md":{
+    "dest": "\{{args.[0]}}/jsdoc2md/README.hbs",
+    "template": {{{JSONstringify (read "assets/jsdoc2md/README.hbs")}}}
+  },
+  "lib":{
+    "dest": "\{{args.[0]}}/lib/\{{args.[0]}}.js",
+    "template": {{{JSONstringify (read "assets/lib/main.js")}}}
+  },
+  "test":{
+    "dest": "\{{args.[0]}}/test/test.js",
+    "template": {{{JSONstringify (read "assets/test/test.js")}}}
+  },
+  "gitignore": {
+    "dest": "\{{args.[0]}}/.gitignore",
+    "template": {{{JSONstringify (read "assets/.gitignore")}}}
+  },
+  "jshintrc": {
+    "dest": "\{{args.[0]}}/.jshintrc",
+    "template": {{{JSONstringify (read "assets/.jshintrc")}}}
+  },
+  "package.json":{
+    "dest": "\{{args.[0]}}/package.json",
+    "template": {{{JSONstringify (read "assets/package.json")}}}
+  },
+  "readme":{
+    "dest": "\{{args.[0]}}/README.md",
+    "template": {{{JSONstringify (read "assets/README.md")}}}
+  },
+  
+  "package": [ "bin", "jsdoc2md", "lib", "test", "gitignore", "jshintrc", "package.json", "readme" ]
+}

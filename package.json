@@ -1,0 +1,16 @@
+{
+  "name": "boil-npm-package",
+  "version": "0.0.0",
+  "description": "Boilerplate a new npm package",
+  "repository": "https://github.com/75lb/boil-npm-package.git",
+  "bin": {
+    "package": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "Lloyd Brookes",
+  "dependencies": {
+    "boil-js": "^0.1.1"
+  }
+}
