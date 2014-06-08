@@ -1,5 +1,5 @@
 var test = require("tape");
-var lib = require("../lib/{{args.[0]}}");
+var lib = require("../");
 
 test("first", function(t){
     
