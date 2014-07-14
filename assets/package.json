@@ -2,7 +2,7 @@
   "name": "{{args.[0]}}",
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "0.0.0",
-  "description": "",
+  "description": "{{args.[0]}}",
   "repository": "https://github.com/75lb/{{args.[0]}}.git",
   "main": "./lib/{{args.[0]}}.js",
   "bin": {
