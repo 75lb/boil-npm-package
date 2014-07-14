@@ -1,6 +1,6 @@
 {
   "name": "boil-npm-package",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Boilerplate a new npm package from the command line",
   "repository": "https://github.com/75lb/boil-npm-package.git",
   "bin": {
