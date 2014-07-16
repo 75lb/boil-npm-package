@@ -1,35 +1,35 @@
 {
   "bin":{
     "dest": "\{{args.[0]}}/bin/cli.js",
-    "template": {{{JSONstringify (read "assets/bin/cli.js")}}}
+    "template": {{{json-stringify (fs-readFile "assets/bin/cli.js")}}}
   },
   "jsdoc2md":{
     "dest": "\{{args.[0]}}/jsdoc2md/README.hbs",
-    "template": {{{JSONstringify (read "assets/jsdoc2md/README.hbs")}}}
+    "template": {{{json-stringify (fs-readFile "assets/jsdoc2md/README.hbs")}}}
   },
   "lib":{
     "dest": "\{{args.[0]}}/lib/\{{args.[0]}}.js",
-    "template": {{{JSONstringify (read "assets/lib/main.js")}}}
+    "template": {{{json-stringify (fs-readFile "assets/lib/main.js")}}}
   },
   "test":{
     "dest": "\{{args.[0]}}/test/test.js",
-    "template": {{{JSONstringify (read "assets/test/test.js")}}}
+    "template": {{{json-stringify (fs-readFile "assets/test/test.js")}}}
   },
   "gitignore": {
     "dest": "\{{args.[0]}}/.gitignore",
-    "template": {{{JSONstringify (read "assets/.gitignore")}}}
+    "template": {{{json-stringify (fs-readFile "assets/.gitignore")}}}
   },
   "jshintrc": {
     "dest": "\{{args.[0]}}/.jshintrc",
-    "template": {{{JSONstringify (read "assets/.jshintrc")}}}
+    "template": {{{json-stringify (fs-readFile "assets/.jshintrc")}}}
   },
   "package.json":{
     "dest": "\{{args.[0]}}/package.json",
-    "template": {{{JSONstringify (read "assets/package.json")}}}
+    "template": {{{json-stringify (fs-readFile "assets/package.json")}}}
   },
   "readme":{
     "dest": "\{{args.[0]}}/README.md",
-    "template": {{{JSONstringify (read "assets/README.md")}}}
+    "template": {{{json-stringify (fs-readFile "assets/README.md")}}}
   },
   
   "package": [ "bin", "jsdoc2md", "lib", "test", "gitignore", "jshintrc", "package.json", "readme" ]
