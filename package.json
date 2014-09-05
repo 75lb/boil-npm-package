@@ -12,6 +12,6 @@
   },
   "author": "Lloyd Brookes",
   "dependencies": {
-    "boil-js": "^0.2"
+    "boil-js": "^0.2.7"
   }
 }

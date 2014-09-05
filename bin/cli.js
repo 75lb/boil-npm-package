@@ -6,8 +6,7 @@ var boil = require("boil-js"),
 
 var args = process.argv.slice(2);
 if (args.length){
-    config = boil.setArgs(config, args);
-    boil.renderRecipe(config, "package");
+    boil.renderRecipe(config, args, "package");
 } else {
     console.error("usage: package <name>");
 }
