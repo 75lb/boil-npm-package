@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 
-var boil = require("boil-js"),
+var boil = require("boil"),
     config = require("../boil.json");
 
 var args = process.argv.slice(2);
