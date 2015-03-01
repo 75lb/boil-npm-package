@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 "use strict";
 
-var boil = require("boil"),
-    config = require("../boil.json");
+var boil = require("boil");
+var config = require("../boil.json");
 
 var args = process.argv.slice(2);
 if (args.length){
