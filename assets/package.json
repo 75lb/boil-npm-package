@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "description": "{{args.[0]}}",
   "repository": "https://github.com/75lb/{{args.[0]}}.git",
+  "license": "MIT",
   "main": "./lib/{{args.[0]}}.js",
   "bin": {
     "{{args.[0]}}": "bin/cli.js"

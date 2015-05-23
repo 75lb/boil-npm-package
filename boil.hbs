@@ -27,10 +27,14 @@
     "dest": "\{{args.[0]}}/package.json",
     "template": {{{json-stringify (fs-readFile "assets/package.json")}}}
   },
+  "LICENSE":{
+    "dest": "\{{args.[0]}}/LICENSE",
+    "template": {{{json-stringify (fs-readFile "assets/LICENSE")}}}
+  },
   "readme":{
     "dest": "\{{args.[0]}}/README.md",
     "template": {{{json-stringify (fs-readFile "assets/README.md")}}}
   },
   
-  "package": [ "bin", "jsdoc2md", "lib", "test", "gitignore", "jshintrc", "package.json", "readme" ]
+  "package": [ "bin", "jsdoc2md", "lib", "test", "gitignore", "LICENSE", "jshintrc", "package.json", "readme" ]
 }
