@@ -5,7 +5,7 @@
   },
   "jsdoc2md":{
     "dest": "{{args.[0]}}/jsdoc2md/README.hbs",
-    "template": "[![view on npm](http://img.shields.io/npm/v/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![npm module downloads per month](http://img.shields.io/npm/dm/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![Build Status](https://travis-ci.org/75lb/{{args.[0]}}.svg?branch=master)](https://travis-ci.org/75lb/{{args.[0]}})\n[![Dependency Status](https://david-dm.org/75lb/{{args.[0]}}.svg)](https://david-dm.org/75lb/{{args.[0]}})\n\n{{>main}}\n\n* * *\n\n&copy; 2015 Lloyd Brookes \\<75pound@gmail.com\\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).\n"
+    "template": "[![view on npm](http://img.shields.io/npm/v/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![npm module downloads per month](http://img.shields.io/npm/dm/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![Build Status](https://travis-ci.org/75lb/{{args.[0]}}.svg?branch=master)](https://travis-ci.org/75lb/{{args.[0]}})\n[![Dependency Status](https://david-dm.org/75lb/{{args.[0]}}.svg)](https://david-dm.org/75lb/{{args.[0]}})\n\n\\{{>main}}\n\n* * *\n\n&copy; 2015 Lloyd Brookes \\<75pound@gmail.com\\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).\n"
   },
   "lib":{
     "dest": "{{args.[0]}}/lib/{{args.[0]}}.js",
