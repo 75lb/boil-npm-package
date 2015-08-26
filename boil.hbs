@@ -15,14 +15,6 @@
     "dest": "\{{args.[0]}}/test/test.js",
     "template": {{{json-stringify (fs-readFile "assets/test/test.js")}}}
   },
-  "gitignore": {
-    "dest": "\{{args.[0]}}/.gitignore",
-    "template": {{{json-stringify (fs-readFile "assets/.gitignore")}}}
-  },
-  "jshintrc": {
-    "dest": "\{{args.[0]}}/.jshintrc",
-    "template": {{{json-stringify (fs-readFile "assets/.jshintrc")}}}
-  },
   "package.json":{
     "dest": "\{{args.[0]}}/package.json",
     "template": {{{json-stringify (fs-readFile "assets/package.json")}}}
@@ -36,5 +28,5 @@
     "template": {{{json-stringify (fs-readFile "assets/README.md")}}}
   },
   
-  "package": [ "bin", "jsdoc2md", "lib", "test", "gitignore", "LICENSE", "jshintrc", "package.json", "readme" ]
+  "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme" ]
 }
