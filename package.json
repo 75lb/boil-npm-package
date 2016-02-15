@@ -1,6 +1,6 @@
 {
   "name": "boil-npm-package",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Boilerplate a new npm package from the command line",
   "repository": "https://github.com/75lb/boil-npm-package.git",
   "license": "MIT",
@@ -12,7 +12,14 @@
     "boil": "boil -t boil.hbs > boil.json; echo"
   },
   "author": "Lloyd Brookes",
-  "keywords": [ "new", "npm", "module", "package", "generate", "boilerplate" ],
+  "keywords": [
+    "new",
+    "npm",
+    "module",
+    "package",
+    "generate",
+    "boilerplate"
+  ],
   "dependencies": {
     "boil": "~0.4"
   }
