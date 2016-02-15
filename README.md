@@ -15,23 +15,25 @@ $ npm install -g boil-npm-package
 ## Usage
 ```sh
 $ package new-module
-34 bytes written to new-module/bin/cli.js
-541 bytes written to new-module/jsdoc2md/README.hbs
-14 bytes written to new-module/lib/new-module.js
-65 bytes written to new-module/test/test.js
-8 bytes written to new-module/.gitignore
-373 bytes written to new-module/.jshintrc
-581 bytes written to new-module/package.json
-541 bytes written to new-module/README.md
+33 bytes written to new-module/bin/cli.js
+664 bytes written to new-module/jsdoc2md/README.md
+13 bytes written to new-module/lib/new-module.js
+84 bytes written to new-module/test/test.js
+1100 bytes written to new-module/LICENSE
+435 bytes written to new-module/package.json
+520 bytes written to new-module/README.md
+76 bytes written to new-module/.travis.yml
 
 $ cd new-module
-$ tree
+$ tree -a
 .
+├── .travis.yml
+├── LICENSE
 ├── README.md
 ├── bin
 │   └── cli.js
 ├── jsdoc2md
-│   └── README.hbs
+│   └── README.md
 ├── lib
 │   └── new-module.js
 ├── package.json
