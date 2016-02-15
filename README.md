@@ -4,7 +4,13 @@
 [![Dependency Status](https://david-dm.org/75lb/boil-npm-package.svg)](https://david-dm.org/75lb/boil-npm-package)
 
 # boil-npm-package
-Quickly boilerplate a new npm package from the command line. Lays out the standard package structure with pre-populated `package.json`, `npm run` scripts, test, lib and bin files etc.. 
+Quickly boilerplate a new npm package from the command line. Lays out the standard package structure with pre-populated `package.json`, `npm run` scripts, test, lib and bin files etc..
+
+## Install
+This installs the `package` command:
+```
+$ npm install -g boil-npm-package
+```
 
 ## Usage
 ```sh

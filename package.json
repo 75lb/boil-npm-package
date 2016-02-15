@@ -12,6 +12,7 @@
     "boil": "boil -t boil.hbs > boil.json; echo"
   },
   "author": "Lloyd Brookes",
+  "keywords": [ "new", "npm", "module", "package", "generate", "boilerplate" ],
   "dependencies": {
     "boil": "~0.4"
   }
