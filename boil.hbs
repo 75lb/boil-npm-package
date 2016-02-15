@@ -4,8 +4,8 @@
     "template": {{{json-stringify (fs-readFile "assets/bin/cli.js")}}}
   },
   "jsdoc2md":{
-    "dest": "\{{args.[0]}}/jsdoc2md/README.hbs",
-    "template": {{{json-stringify (fs-readFile "assets/jsdoc2md/README.hbs")}}}
+    "dest": "\{{args.[0]}}/jsdoc2md/README.md",
+    "template": {{{json-stringify (fs-readFile "assets/jsdoc2md/README.md")}}}
   },
   "lib":{
     "dest": "\{{args.[0]}}/lib/\{{args.[0]}}.js",
@@ -27,6 +27,9 @@
     "dest": "\{{args.[0]}}/README.md",
     "template": {{{json-stringify (fs-readFile "assets/README.md")}}}
   },
-  
-  "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme" ]
+  "travis":{
+    "dest": "\{{args.[0]}}/.travis.yml",
+    "template": {{{json-stringify (fs-readFile "assets/.travis.yml")}}}
+  },
+  "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme", "travis" ]
 }

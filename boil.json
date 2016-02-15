@@ -4,8 +4,8 @@
     "template": "#!/usr/bin/env node\n'use strict'\n"
   },
   "jsdoc2md":{
-    "dest": "{{args.[0]}}/jsdoc2md/README.hbs",
-    "template": "[![view on npm](http://img.shields.io/npm/v/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![npm module downloads per month](http://img.shields.io/npm/dm/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![Build Status](https://travis-ci.org/75lb/{{args.[0]}}.svg?branch=master)](https://travis-ci.org/75lb/{{args.[0]}})\n[![Dependency Status](https://david-dm.org/75lb/{{args.[0]}}.svg)](https://david-dm.org/75lb/{{args.[0]}})\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)\n\n\\{{>main}}\n\n* * *\n\n&copy; 2015 Lloyd Brookes \\<75pound@gmail.com\\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).\n"
+    "dest": "{{args.[0]}}/jsdoc2md/README.md",
+    "template": "[![view on npm](http://img.shields.io/npm/v/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![npm module downloads](http://img.shields.io/npm/dt/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![Build Status](https://travis-ci.org/75lb/{{args.[0]}}.svg?branch=master)](https://travis-ci.org/75lb/{{args.[0]}})\n[![Dependency Status](https://david-dm.org/75lb/{{args.[0]}}.svg)](https://david-dm.org/75lb/{{args.[0]}})\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)\n\n${docs.renderAll()}\n\n* * *\n\n&copy; 2016 Lloyd Brookes \\<75pound@gmail.com\\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).\n"
   },
   "lib":{
     "dest": "{{args.[0]}}/lib/{{args.[0]}}.js",
@@ -17,17 +17,20 @@
   },
   "package.json":{
     "dest": "{{args.[0]}}/package.json",
-    "template": "{\n  \"name\": \"{{args.[0]}}\",\n  \"author\": \"Lloyd Brookes <75pound@gmail.com>\",\n  \"version\": \"0.0.0\",\n  \"description\": \"{{args.[0]}}\",\n  \"repository\": \"https://github.com/75lb/{{args.[0]}}.git\",\n  \"license\": \"MIT\",\n  \"main\": \"./lib/{{args.[0]}}.js\",\n  \"bin\": {\n    \"{{args.[0]}}\": \"bin/cli.js\"\n  },\n  \"keywords\": [],\n  \"engines\": {\n    \"node\": \">=0.10.0\"\n  },\n  \"scripts\": {\n    \"test\": \"tape test/*.js\",\n    \"docs\": \"jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo\"\n  }\n}\n"
+    "template": "{\n  \"name\": \"{{args.[0]}}\",\n  \"author\": \"Lloyd Brookes <75pound@gmail.com>\",\n  \"version\": \"0.0.0\",\n  \"description\": \"{{args.[0]}}\",\n  \"repository\": \"https://github.com/75lb/{{args.[0]}}.git\",\n  \"license\": \"MIT\",\n  \"main\": \"./lib/{{args.[0]}}.js\",\n  \"bin\": {\n    \"{{args.[0]}}\": \"bin/cli.js\"\n  },\n  \"keywords\": [],\n  \"engines\": {\n    \"node\": \">=0.10.0\"\n  },\n  \"scripts\": {\n    \"test\": \"tape test/*.js\",\n    \"docs\": \"jsdoc2md -t jsdoc2md/README.md lib/*.js > README.md; echo\"\n  }\n}\n"
   },
   "LICENSE":{
     "dest": "{{args.[0]}}/LICENSE",
-    "template": "The MIT License (MIT)\n\nCopyright (c) 2015 Lloyd Brookes <75pound@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    "template": "The MIT License (MIT)\n\nCopyright (c) 2016 Lloyd Brookes <75pound@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
   },
   "readme":{
     "dest": "{{args.[0]}}/README.md",
     "template": "[![view on npm](http://img.shields.io/npm/v/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![npm module downloads per month](http://img.shields.io/npm/dm/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![Build Status](https://travis-ci.org/75lb/{{args.[0]}}.svg?branch=master)](https://travis-ci.org/75lb/{{args.[0]}})\n[![Dependency Status](https://david-dm.org/75lb/{{args.[0]}}.svg)](https://david-dm.org/75lb/{{args.[0]}})\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)\n\n#{{args.[0]}}\n"
   },
-  
-  "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme" ]
+  "travis":{
+    "dest": "{{args.[0]}}/.travis.yml",
+    "template": "language: node_js\nnode_js:\n  - '0.10'\n  - '0.12'\n  - 'iojs'\n  - '4'\n  - '5'\n"
+  },
+  "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme", "travis" ]
 }
 
