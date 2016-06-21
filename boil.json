@@ -25,11 +25,11 @@
   },
   "readme":{
     "dest": "{{args.[0]}}/README.md",
-    "template": "[![view on npm](http://img.shields.io/npm/v/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![npm module downloads per month](http://img.shields.io/npm/dm/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![Build Status](https://travis-ci.org/75lb/{{args.[0]}}.svg?branch=master)](https://travis-ci.org/75lb/{{args.[0]}})\n[![Dependency Status](https://david-dm.org/75lb/{{args.[0]}}.svg)](https://david-dm.org/75lb/{{args.[0]}})\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)\n\n#{{args.[0]}}\n"
+    "template": "[![view on npm](http://img.shields.io/npm/v/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![npm module downloads](http://img.shields.io/npm/dt/{{args.[0]}}.svg)](https://www.npmjs.org/package/{{args.[0]}})\n[![Build Status](https://travis-ci.org/75lb/{{args.[0]}}.svg?branch=master)](https://travis-ci.org/75lb/{{args.[0]}})\n[![Dependency Status](https://david-dm.org/75lb/{{args.[0]}}.svg)](https://david-dm.org/75lb/{{args.[0]}})\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)\n\n# {{args.[0]}}\n"
   },
   "travis":{
     "dest": "{{args.[0]}}/.travis.yml",
-    "template": "language: node_js\nnode_js:\n  - '0.10'\n  - '0.12'\n  - 'iojs'\n  - '4'\n  - '5'\n"
+    "template": "language: node_js\nnode_js:\n  - '0.10'\n  - 0.12\n  - iojs\n  - 4\n  - 5\n  - 6\n"
   },
   "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme", "travis" ]
 }
