@@ -4,8 +4,8 @@
     "template": {{{json-stringify (fs-readFile "assets/bin/cli.js")}}}
   },
   "jsdoc2md":{
-    "dest": "\{{args.[0]}}/jsdoc2md/README.md",
-    "template": {{{json-stringify (fs-readFile "assets/jsdoc2md/README.md")}}}
+    "dest": "\{{args.[0]}}/jsdoc2md/README.hbs",
+    "template": {{{json-stringify (fs-readFile "assets/jsdoc2md/README.hbs")}}}
   },
   "lib":{
     "dest": "\{{args.[0]}}/lib/\{{args.[0]}}.js",
