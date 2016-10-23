@@ -31,5 +31,9 @@
     "dest": "\{{args.[0]}}/.travis.yml",
     "template": {{{json-stringify (fs-readFile "assets/.travis.yml")}}}
   },
-  "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme", "travis" ]
+  "main":{
+    "dest": "\{{args.[0]}}/.main.js",
+    "template": {{{json-stringify (fs-readFile "assets/main.js")}}}
+  },
+  "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme", "travis", "main" ]
 }

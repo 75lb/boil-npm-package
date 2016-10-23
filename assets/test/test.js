@@ -1,6 +1,9 @@
-var test = require('tape')
-var lib = require('../')
+'use strict'
+const TestRunner = require('test-runner')
+const lib = require('../../')
 
-test('first', function (t) {
+const runner = new TestRunner()
+
+runner.test('first', function () {
 
 })
