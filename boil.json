@@ -29,7 +29,7 @@
   },
   "travis":{
     "dest": "{{args.[0]}}/.travis.yml",
-    "template": "language: node_js\nnode_js:\n  - 4\n  - 5\n  - 6\n  - 7\n"
+    "template": "language: node_js\nnode_js:\n  - 4\n  - 5\n  - 6\n  - 7\n  - 8\n"
   },
   "package": [ "bin", "jsdoc2md", "lib", "test", "LICENSE", "package.json", "readme", "travis" ]
 }
